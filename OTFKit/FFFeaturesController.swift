@@ -16,16 +16,6 @@ public class FFFeaturesController: NSObject {
     var selectorInFonts: [FFFSelector : [ NSFont ]] = [:]
     var fonts: [NSFont] = []
     
-    public override init() {
-        print ("init")
-        super.init()
-    }
-    
-    init(from decoder:Decoder) {
-        print ("init from Decoder")
-        super.init()
-    }
-
     func add (fontNames: [String], size:CGFloat) {
         for fontName in fontNames {
             if let font = NSFont(name: fontName, size: size) {
@@ -34,7 +24,6 @@ public class FFFeaturesController: NSObject {
         }
     }
     
-    //func
     func addTypeControllers (of font: NSFont) {
         
         fonts.append(font)

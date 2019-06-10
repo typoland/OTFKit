@@ -13,7 +13,6 @@
 		B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A6C22AE5E7A00EBA62C /* OTF.framework */; };
 		B24A7A7922AE69BA00EBA62C /* FFFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7822AE69BA00EBA62C /* FFFType.swift */; };
 		B24A7A7B22AE6B0300EBA62C /* FFFSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */; };
-		B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 		B24A7A6C22AE5E7A00EBA62C /* OTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A7A7822AE69BA00EBA62C /* FFFType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFType.swift; sourceTree = "<group>"; };
 		B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFSelector.swift; sourceTree = "<group>"; };
-		B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeaturesController.swift; sourceTree = "<group>"; };
 		B26C200E22AEC40D003480EB /* OTFKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OTFKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -83,7 +81,7 @@
 		B24A7A5322AE5E4800EBA62C /* OTFKit */ = {
 			isa = PBXGroup;
 			children = (
-				B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */,
+				B26C201322AED02E003480EB /* New Group */,
 				B24A7A5422AE5E4800EBA62C /* OTFKit.h */,
 				B24A7A5522AE5E4800EBA62C /* Info.plist */,
 				B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */,
@@ -107,6 +105,13 @@
 				B24A7A6C22AE5E7A00EBA62C /* OTF.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26C201322AED02E003480EB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +225,6 @@
 			files = (
 				B24A7A7B22AE6B0300EBA62C /* FFFSelector.swift in Sources */,
 				B24A7A7922AE69BA00EBA62C /* FFFType.swift in Sources */,
-				B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
