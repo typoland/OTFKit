@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B24A7A5B22AE5E4800EBA62C /* OTFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A5122AE5E4800EBA62C /* OTFKit.framework */; };
+		B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */; };
+		B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B24A7A5422AE5E4800EBA62C /* OTFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A6C22AE5E7A00EBA62C /* OTF.framework */; };
+		B24A7A6F22AE5EBE00EBA62C /* OTFBaseFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */; };
+		B24A7A7922AE69BA00EBA62C /* OTFFeatureTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */; };
+		B24A7A7B22AE6B0300EBA62C /* OTFFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */; };
+		B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */; };
+		B24A7A8322AE860200EBA62C /* NSFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */; };
+		B24A7A8522AE861B00EBA62C /* OTFAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8422AE861B00EBA62C /* OTFAxis.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B24A7A5C22AE5E4800EBA62C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B24A7A4822AE5E4800EBA62C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24A7A5022AE5E4800EBA62C;
+			remoteInfo = OTFKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B24A7A5122AE5E4800EBA62C /* OTFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24A7A5422AE5E4800EBA62C /* OTFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTFKit.h; sourceTree = "<group>"; };
+		B24A7A5522AE5E4800EBA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24A7A5A22AE5E4800EBA62C /* OTFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFKitTests.swift; sourceTree = "<group>"; };
+		B24A7A6122AE5E4800EBA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24A7A6C22AE5E7A00EBA62C /* OTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFBaseFeatureController.swift; sourceTree = "<group>"; };
+		B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeatureTypeController.swift; sourceTree = "<group>"; };
+		B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeatureController.swift; sourceTree = "<group>"; };
+		B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeaturesController.swift; sourceTree = "<group>"; };
+		B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + Extensions.swift"; sourceTree = "<group>"; };
+		B24A7A8422AE861B00EBA62C /* OTFAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFAxis.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B24A7A4E22AE5E4800EBA62C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24A7A5722AE5E4800EBA62C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24A7A5B22AE5E4800EBA62C /* OTFKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B24A7A4722AE5E4800EBA62C = {
+			isa = PBXGroup;
+			children = (
+				B24A7A5322AE5E4800EBA62C /* OTFKit */,
+				B24A7A5E22AE5E4800EBA62C /* OTFKitTests */,
+				B24A7A5222AE5E4800EBA62C /* Products */,
+				B24A7A6B22AE5E7A00EBA62C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B24A7A5222AE5E4800EBA62C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B24A7A5122AE5E4800EBA62C /* OTFKit.framework */,
+				B24A7A5A22AE5E4800EBA62C /* OTFKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B24A7A5322AE5E4800EBA62C /* OTFKit */ = {
+			isa = PBXGroup;
+			children = (
+				B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */,
+				B24A7A8422AE861B00EBA62C /* OTFAxis.swift */,
+				B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */,
+				B24A7A5422AE5E4800EBA62C /* OTFKit.h */,
+				B24A7A5522AE5E4800EBA62C /* Info.plist */,
+				B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */,
+				B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */,
+				B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */,
+			);
+			path = OTFKit;
+			sourceTree = "<group>";
+		};
+		B24A7A5E22AE5E4800EBA62C /* OTFKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */,
+				B24A7A6122AE5E4800EBA62C /* Info.plist */,
+			);
+			path = OTFKitTests;
+			sourceTree = "<group>";
+		};
+		B24A7A6B22AE5E7A00EBA62C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B24A7A6C22AE5E7A00EBA62C /* OTF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B24A7A4C22AE5E4800EBA62C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B24A7A5022AE5E4800EBA62C /* OTFKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24A7A6522AE5E4800EBA62C /* Build configuration list for PBXNativeTarget "OTFKit" */;
+			buildPhases = (
+				B24A7A4C22AE5E4800EBA62C /* Headers */,
+				B24A7A4D22AE5E4800EBA62C /* Sources */,
+				B24A7A4E22AE5E4800EBA62C /* Frameworks */,
+				B24A7A4F22AE5E4800EBA62C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTFKit;
+			productName = OTFKit;
+			productReference = B24A7A5122AE5E4800EBA62C /* OTFKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B24A7A5922AE5E4800EBA62C /* OTFKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24A7A6822AE5E4800EBA62C /* Build configuration list for PBXNativeTarget "OTFKitTests" */;
+			buildPhases = (
+				B24A7A5622AE5E4800EBA62C /* Sources */,
+				B24A7A5722AE5E4800EBA62C /* Frameworks */,
+				B24A7A5822AE5E4800EBA62C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B24A7A5D22AE5E4800EBA62C /* PBXTargetDependency */,
+			);
+			name = OTFKitTests;
+			productName = OTFKitTests;
+			productReference = B24A7A5A22AE5E4800EBA62C /* OTFKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B24A7A4822AE5E4800EBA62C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Łukasz Dziedzic";
+				TargetAttributes = {
+					B24A7A5022AE5E4800EBA62C = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					B24A7A5922AE5E4800EBA62C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B24A7A4B22AE5E4800EBA62C /* Build configuration list for PBXProject "OTFKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B24A7A4722AE5E4800EBA62C;
+			productRefGroup = B24A7A5222AE5E4800EBA62C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24A7A5022AE5E4800EBA62C /* OTFKit */,
+				B24A7A5922AE5E4800EBA62C /* OTFKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B24A7A4F22AE5E4800EBA62C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24A7A5822AE5E4800EBA62C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B24A7A4D22AE5E4800EBA62C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24A7A7B22AE6B0300EBA62C /* OTFFeatureController.swift in Sources */,
+				B24A7A7922AE69BA00EBA62C /* OTFFeatureTypeController.swift in Sources */,
+				B24A7A8522AE861B00EBA62C /* OTFAxis.swift in Sources */,
+				B24A7A8322AE860200EBA62C /* NSFont + Extensions.swift in Sources */,
+				B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */,
+				B24A7A6F22AE5EBE00EBA62C /* OTFBaseFeatureController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B24A7A5622AE5E4800EBA62C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B24A7A5D22AE5E4800EBA62C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24A7A5022AE5E4800EBA62C /* OTFKit */;
+			targetProxy = B24A7A5C22AE5E4800EBA62C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B24A7A6322AE5E4800EBA62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B24A7A6422AE5E4800EBA62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B24A7A6622AE5E4800EBA62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3ASHMCMJEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OTFKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.typoland.OTFKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B24A7A6722AE5E4800EBA62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3ASHMCMJEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OTFKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.typoland.OTFKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B24A7A6922AE5E4800EBA62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ASHMCMJEN;
+				INFOPLIST_FILE = OTFKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.typoland.OTFKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B24A7A6A22AE5E4800EBA62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3ASHMCMJEN;
+				INFOPLIST_FILE = OTFKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.typoland.OTFKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B24A7A4B22AE5E4800EBA62C /* Build configuration list for PBXProject "OTFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24A7A6322AE5E4800EBA62C /* Debug */,
+				B24A7A6422AE5E4800EBA62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24A7A6522AE5E4800EBA62C /* Build configuration list for PBXNativeTarget "OTFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24A7A6622AE5E4800EBA62C /* Debug */,
+				B24A7A6722AE5E4800EBA62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B24A7A6822AE5E4800EBA62C /* Build configuration list for PBXNativeTarget "OTFKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24A7A6922AE5E4800EBA62C /* Debug */,
+				B24A7A6A22AE5E4800EBA62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B24A7A4822AE5E4800EBA62C /* Project object */;
+}
