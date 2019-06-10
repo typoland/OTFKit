@@ -24,6 +24,4 @@ extension OTFBaseFeatureController {
     }
 }
 
-class OTFFeatureController: OTFBaseFeatureController {
-    var feature: OTFAbstractFeatureProtocol
-}
+

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import OTF
+
+public class FFFType: OTFType<FFFSelector> {
+    
+    
+    
+}

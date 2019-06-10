@@ -8,89 +8,9 @@
 
 import Foundation
 
-public typealias OTFFeatureTypeSet = OrderedSet <OTFFeatureType>
-
-class OTFeaturesController {
-    public var types: OTFFeatureTypeSet
-    
-    /*
-    init (featuresController: OTFeaturesController) {
-        types = []
-        for type in featuresController.types {
-            types.append(type)
-        }
-    }
-    */
-    init (from font:NSFont) {
-        types = font.OTFFeaturesTypes
-    }
-    
-    init (fontNames:[String], size:CGFloat) {
-       types = []
-        for fontName in fontNames {
-            if let font = NSFont(name: fontName, size: size) {
-                font.OTFFeaturesTypes.forEach({ type in
-                    append(type)
-                })
-            }
-        }
-    }
-    
-    func append(_ type:OTFFeatureType) {
-        types.append(type)
-        for selector in type.selectors {
-            append(selector)
-        }
-    }
-    
-    func append(_ selector:OTFFeature) {
-        if types.contains(selector.parent) {
-            selector.parent.selectors.append(selector)
-            if let selectorIndex = selector.parent.selectors.firstIndex(of: selector) {
-                
-            }
-            
-            
-        }
-    }
-    
-    func addFontFeatureTypes(_ fontFeatureTypes:OTFFeatureTypeSet, fromFont font :NSFont ){
-        for type in fontFeatures.types {
-            self.addOTFType(type as! OTFType, fromFont: font)
-            for selector in (type as! OTFType).typeSelectors {
-                self.addFeature(selector as! OTFeature, fromFont: font)
-            }
-        }
-    }
-    
-    func addFeature(_ feature:OTFFeature, fromFont: NSFont) {
-        
-        let index = Int(types.index(of: feature.parent))
-        
-        if index != NSNotFound {
-            let type = types.object(at: index) as! OTFType
-            feature.parent = type
-            type.typeSelectors.add(feature)
-            
-            let featureIndex = type.typeSelectors.index(of: feature)
-            if featureIndex != NSNotFound {
-                let savedFeature = type.typeSelectors.object(at: featureIndex)
-                (savedFeature as AnyObject).fonts.add(fromFont)
-            }
-        }
-    }
-    
-    
-}
 
 extension NSFont {
-    
-    @objc var OTFFeaturesTypeCount:Int {
-        get {
-            return self.OTFFeaturesTypes.types.count
-        }
-    }
-    
+
     var axesDict: [[String:Any]] {
         return axes.map { $0.dict }
     }
@@ -116,55 +36,45 @@ extension NSFont {
         return result
     }
     
-    var OTFFeaturesTypes : OrderedSet<OTFFeatureType> {
+    public var featuresDescriptions : [(name:String,
+        nameID:Int,
+        identifier:Int,
+        exclusive:Int,
+        selectors: [(name:String, nameID:Int?, identifier:Int, defaultSelector:Int?)])] {
         
-        get {
+        let descriptor = self.fontDescriptor
+        var result: [(name:String,
+        nameID:Int,
+        identifier:Int,
+        exclusive:Int,
+        selectors: [(name:String, nameID:Int?, identifier:Int, defaultSelector:Int?)])] = []
+        
+        if let featureDescriptions = CTFontDescriptorCopyAttribute(descriptor, kCTFontFeaturesAttribute) {
             
-            var result: OrderedSet<OTFFeatureType> = []
-            
-            let descriptor = self.fontDescriptor
+            for featureType in featureDescriptions  as! [[String:AnyObject]]{
+                
+                let name = featureType["CTFeatureTypeName"] as? String ?? "No Name"
+                let nameID = featureType["CTFeatureTypeNameID"] as? Int ?? 0
+                let identifier = featureType["CTFeatureTypeIdentifier"]  as? Int ?? 0
+                let exclusive = featureType["CTFeatureTypeExclusive"] as? Int ?? 0
 
-            if let featureDescriptions = CTFontDescriptorCopyAttribute(descriptor, kCTFontFeaturesAttribute) {
-
-                for featureType in featureDescriptions  as! [[String:AnyObject]]{
+                var selectors: [(name:String,nameID:Int?,identifier:Int, defaultSelector:Int?)] = []
+                for feature in featureType["CTFeatureTypeSelectors"] as! [[String:AnyObject]] {
+                    let name = (feature["CTFeatureSelectorName"] as? String ) ?? "No name"
+                    selectors.append((name:name,
+                                         nameID: feature["CTFeatureSelectorNameID"] as? Int,
+                                         identifier: feature["CTFeatureSelectorIdentifier"] as! Int,
+                                         defaultSelector: feature["CTFeatureSelectorDefault"] as? Int))
                     
-                    let name = featureType["CTFeatureTypeName"] as? String ?? "No Name"
-                    let nameID = featureType["CTFeatureTypeNameID"] as? Int ?? 0
-                    let identifier = featureType["CTFeatureTypeIdentifier"]  as? Int ?? 0
-                    let exclusive = featureType["CTFeatureTypeExclusive"] as? Int ?? 0
-
-                    let otfType = OTFFeatureType(name:name,
-                                          nameID: nameID,
-                                          identifier: identifier,
-                                          exclusive: exclusive)
                     
-                    result.append(otfType)
-                    //MARK: TO DO tu dołączał font co by
-                    
-                    for feature in featureType["CTFeatureTypeSelectors"] as! [[String:AnyObject]] {
-                        
-                        var name = feature["CTFeatureSelectorName"] as? String
-                        if name == nil {
-                            
-                            name = String(format: "<no name feature>" )
-                            
-                            
-                        }
-                        
-                        let fea = OTFFeature(name:name!,
-                                            parent: otfType,
-                                            nameID: feature["CTFeatureSelectorNameID"] as? Int,
-                                            identifier: feature["CTFeatureSelectorIdentifier"] as! Int,
-                                            defaultSelector: feature["CTFeatureSelectorDefault"] as? Int)
-                        result.addFeature(fea, fromFont: self)
-                    }
                 }
+                result.append((name: name, nameID: nameID, identifier: identifier, exclusive: exclusive, selectors: selectors))
+                
             }
-            return result
+            
         }
+        return result
     }
-    
-
     
     var allChars:String {
         get {
@@ -190,8 +100,5 @@ extension NSFont {
             return result
         }
         
-    }
-    @objc func setAllChars (_ sender:Any) {
-        print ("setting allchars")
     }
 }

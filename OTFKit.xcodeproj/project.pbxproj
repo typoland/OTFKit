@@ -11,12 +11,9 @@
 		B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */; };
 		B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B24A7A5422AE5E4800EBA62C /* OTFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A6C22AE5E7A00EBA62C /* OTF.framework */; };
-		B24A7A6F22AE5EBE00EBA62C /* OTFBaseFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */; };
-		B24A7A7922AE69BA00EBA62C /* OTFFeatureTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */; };
-		B24A7A7B22AE6B0300EBA62C /* OTFFeatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */; };
+		B24A7A7922AE69BA00EBA62C /* FFFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7822AE69BA00EBA62C /* FFFType.swift */; };
+		B24A7A7B22AE6B0300EBA62C /* FFFSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */; };
 		B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */; };
-		B24A7A8322AE860200EBA62C /* NSFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */; };
-		B24A7A8522AE861B00EBA62C /* OTFAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A8422AE861B00EBA62C /* OTFAxis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +34,10 @@
 		B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFKitTests.swift; sourceTree = "<group>"; };
 		B24A7A6122AE5E4800EBA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A7A6C22AE5E7A00EBA62C /* OTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFBaseFeatureController.swift; sourceTree = "<group>"; };
-		B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeatureTypeController.swift; sourceTree = "<group>"; };
-		B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeatureController.swift; sourceTree = "<group>"; };
+		B24A7A7822AE69BA00EBA62C /* FFFType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFType.swift; sourceTree = "<group>"; };
+		B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFSelector.swift; sourceTree = "<group>"; };
 		B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFeaturesController.swift; sourceTree = "<group>"; };
-		B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + Extensions.swift"; sourceTree = "<group>"; };
-		B24A7A8422AE861B00EBA62C /* OTFAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFAxis.swift; sourceTree = "<group>"; };
+		B26C200E22AEC40D003480EB /* OTFKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OTFKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +63,7 @@
 		B24A7A4722AE5E4800EBA62C = {
 			isa = PBXGroup;
 			children = (
+				B26C200E22AEC40D003480EB /* OTFKit.playground */,
 				B24A7A5322AE5E4800EBA62C /* OTFKit */,
 				B24A7A5E22AE5E4800EBA62C /* OTFKitTests */,
 				B24A7A5222AE5E4800EBA62C /* Products */,
@@ -88,13 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				B24A7A8022AE85C100EBA62C /* OTFFeaturesController.swift */,
-				B24A7A8422AE861B00EBA62C /* OTFAxis.swift */,
-				B24A7A8222AE860200EBA62C /* NSFont + Extensions.swift */,
 				B24A7A5422AE5E4800EBA62C /* OTFKit.h */,
 				B24A7A5522AE5E4800EBA62C /* Info.plist */,
-				B24A7A6E22AE5EBE00EBA62C /* OTFBaseFeatureController.swift */,
-				B24A7A7A22AE6B0300EBA62C /* OTFFeatureController.swift */,
-				B24A7A7822AE69BA00EBA62C /* OTFFeatureTypeController.swift */,
+				B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */,
+				B24A7A7822AE69BA00EBA62C /* FFFType.swift */,
 			);
 			path = OTFKit;
 			sourceTree = "<group>";
@@ -225,12 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24A7A7B22AE6B0300EBA62C /* OTFFeatureController.swift in Sources */,
-				B24A7A7922AE69BA00EBA62C /* OTFFeatureTypeController.swift in Sources */,
-				B24A7A8522AE861B00EBA62C /* OTFAxis.swift in Sources */,
-				B24A7A8322AE860200EBA62C /* NSFont + Extensions.swift in Sources */,
+				B24A7A7B22AE6B0300EBA62C /* FFFSelector.swift in Sources */,
+				B24A7A7922AE69BA00EBA62C /* FFFType.swift in Sources */,
 				B24A7A8122AE85C100EBA62C /* OTFFeaturesController.swift in Sources */,
-				B24A7A6F22AE5EBE00EBA62C /* OTFBaseFeatureController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
