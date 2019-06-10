@@ -9,13 +9,28 @@
 import Foundation
 import OTF
 
-public class FFFSelector:OTF.OTFSelector {
+public class FFFSelector:NSObject, OTFSelectorProtocol {
+    public var defaultSelector: Int?
     
-    public var parent: FFFType
+    @objc public var name: String {
+        return _selector.name
+    }
+    
+    @objc public var nameID: Int {
+        return _selector.nameID
+    }
+    
+    @objc public var identifier: Int {
+        return _selector.identifier
+    }
+    
+    private var _selector: OTFSelector
+    
+    @objc public var parent: FFFType
     
     public init (parent:FFFType, name: String, nameID: Int?, identifier: Int, defaultSelector: Int?) {
         self.parent = parent
-        super.init(name: name, nameID: nameID, identifier: identifier, defaultSelector: defaultSelector)
+        self._selector = OTFSelector.init(name: name, nameID: nameID, identifier: identifier, defaultSelector: defaultSelector)
+        super.init()
     }
-    
 }
