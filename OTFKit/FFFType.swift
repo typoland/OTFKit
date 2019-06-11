@@ -49,3 +49,9 @@ import OTF
         super.init()
     }
 }
+
+extension FFFType {
+    public override var description: String {
+        return "OTFType \"\(name)\""
+    }
+}

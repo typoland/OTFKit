@@ -34,3 +34,9 @@ public class FFFSelector:NSObject, OTFSelectorProtocol {
         super.init()
     }
 }
+
+extension FFFSelector {
+    public override var description: String {
+        return "OTFSelector \"\(name)\""
+    }
+}
