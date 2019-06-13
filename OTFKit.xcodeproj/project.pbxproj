@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2375F4222B2CFC00020A1B1 /* FFFBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2375F4122B2CFC00020A1B1 /* FFFBase.swift */; };
 		B24A7A5B22AE5E4800EBA62C /* OTFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A5122AE5E4800EBA62C /* OTFKit.framework */; };
 		B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */; };
 		B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B24A7A5422AE5E4800EBA62C /* OTFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2375F4122B2CFC00020A1B1 /* FFFBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFBase.swift; sourceTree = "<group>"; };
 		B24A7A5122AE5E4800EBA62C /* OTFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24A7A5422AE5E4800EBA62C /* OTFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTFKit.h; sourceTree = "<group>"; };
 		B24A7A5522AE5E4800EBA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,11 +83,11 @@
 		B24A7A5322AE5E4800EBA62C /* OTFKit */ = {
 			isa = PBXGroup;
 			children = (
-				B26C201322AED02E003480EB /* New Group */,
 				B24A7A5422AE5E4800EBA62C /* OTFKit.h */,
 				B24A7A5522AE5E4800EBA62C /* Info.plist */,
-				B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */,
+				B2375F4122B2CFC00020A1B1 /* FFFBase.swift */,
 				B24A7A7822AE69BA00EBA62C /* FFFType.swift */,
+				B24A7A7A22AE6B0300EBA62C /* FFFSelector.swift */,
 			);
 			path = OTFKit;
 			sourceTree = "<group>";
@@ -105,13 +107,6 @@
 				B24A7A6C22AE5E7A00EBA62C /* OTF.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B26C201322AED02E003480EB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +220,7 @@
 			files = (
 				B24A7A7B22AE6B0300EBA62C /* FFFSelector.swift in Sources */,
 				B24A7A7922AE69BA00EBA62C /* FFFType.swift in Sources */,
+				B2375F4222B2CFC00020A1B1 /* FFFBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

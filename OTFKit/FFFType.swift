@@ -9,49 +9,28 @@
 import Foundation
 import OTF
 
-@objc public class FFFType: NSObject, OTFTypeProtocol {
-    
-    public var exclusive: Int? {
-        return _type.exclusive
-    }
-    
+@objc public class FFFType: FFFBase, OTFTypeProtocol {
     
     public typealias Selector = FFFSelector
+
+    public var exclusive: Int
+
+    var _selectors: OrderedSet<FFFSelector>
     
     @objc public var selectors: Array<FFFSelector> {
-        get {
-            return Array(_type.selectors)
-        } set {
-            _type.selectors = OrderedSet( newValue )
-        }
+        get { return Array(_selectors) }
+        set { _selectors = OrderedSet( newValue ) }
     }
-    
-    @objc public var exclusive_: Int {
-        return exclusive ?? -1
-    }
-
-    @objc public var name: String {
-        return _type.name
-    }
-    
-    @objc public var nameID: Int {
-        return _type.nameID
-    }
-
-    @objc public var identifier: Int {
-        return _type.identifier
-    }
-
-    private var _type:OTFType<FFFSelector>
     
     public init(name: String,
-                nameID: Int?,
+                nameID: Int,
                 identifier: Int,
-                exclusive: Int?,
+                exclusive: Int,
                 selectors: OrderedSet<Selector> = [])
     {
-        _type = OTFType(name: name, nameID: nameID, identifier: identifier, exclusive: exclusive, selectors: selectors)
-        super.init()
+        self._selectors = selectors
+        self.exclusive = exclusive
+        super.init(name: name, nameID: nameID, identifier: identifier)
     }
 }
 
