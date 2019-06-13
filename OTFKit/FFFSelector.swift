@@ -9,7 +9,7 @@
 import Foundation
 import OTF
 
-public class FFFSelector:NSObject, OTFSelectorProtocol {
+public class FFFSelector: NSObject, OTFSelectorProtocol {
     public var defaultSelector: Int?
     
     @objc public var name: String {

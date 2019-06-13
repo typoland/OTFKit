@@ -11,29 +11,34 @@ import OTF
 
 @objc public class FFFType: NSObject, OTFTypeProtocol {
     
-    public typealias Selector = FFFSelector
-    
-    public var selectors: OrderedSet<FFFSelector> {
-        get {
-            return _type.selectors
-        } set {
-            _type.selectors = newValue
-        }
-    }
-    
     public var exclusive: Int? {
         return _type.exclusive
     }
+    
+    
+    public typealias Selector = FFFSelector
+    
+    @objc public var selectors: Array<FFFSelector> {
+        get {
+            return Array(_type.selectors)
+        } set {
+            _type.selectors = OrderedSet( newValue )
+        }
+    }
+    
+    @objc public var exclusive_: Int {
+        return exclusive ?? -1
+    }
 
-    public var name: String {
+    @objc public var name: String {
         return _type.name
     }
     
-    public var nameID: Int {
+    @objc public var nameID: Int {
         return _type.nameID
     }
 
-    public var identifier: Int {
+    @objc public var identifier: Int {
         return _type.identifier
     }
 
