@@ -37,11 +37,16 @@ extension NSFont {
         return result
     }
     
-    public func featuresDescriptions2 <T:OTFTypeProtocol> () -> [T] {
-        return []
+    public func featuresDescriptions <T:OTFTypeProtocol> () -> [T] {
+        typealias S = T.Selector
+        var result: [T] = []
+        for t in _featuresDescriptions {
+            result.append(T.type(name: t.name, nameID: t.nameID, identifier: t.identifier, exclusive: t.exclusive, selectors: t.selectors))
+        }
+        return result
     }
     
-    public var featuresDescriptions : [(name:String,
+    public var _featuresDescriptions : [(name:String,
         nameID:Int,
         identifier:Int,
         exclusive:Int,
