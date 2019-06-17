@@ -8,16 +8,45 @@
 
 import Foundation
 
+public protocol AxisProtocol {
+    var name:String {get}
+    var identifier:Int  {get}
+    var minValue:Double {get}
+    var maxValue:Double {get}
+    var defaultValue:Double {get}
+}
 
-public class OTFAxis {
-    public enum Keys:String {
-        case id = "NSCTVariationAxisIdentifier"
-        case name = "NSCTVariationAxisName"
-        case minValue = "NSCTVariationAxisMinimumValue"
-        case defaultValue = "NSCTVariationAxisDefaultValue"
-        case maxValue = "NSCTVariationAxisMaximumValue"
-        
+public enum OTFAxisProtocolKeys:String {
+    case id = "NSCTVariationAxisIdentifier"
+    case name = "NSCTVariationAxisName"
+    case minValue = "NSCTVariationAxisMinimumValue"
+    case defaultValue = "NSCTVariationAxisDefaultValue"
+    case maxValue = "NSCTVariationAxisMaximumValue"
+}
+
+public protocol OTFAxisProtocol:AxisProtocol {
+    init(identifier:Int, name: String, min:Double, default:Double, max:Double)
+}
+
+extension OTFAxisProtocol {
+    var dict:[OTFAxisProtocolKeys: Any] {
+        return [.id: identifier as CFNumber as Any,
+                .name: name as  Any,
+                .minValue: minValue as CFNumber as Any,
+                .defaultValue: defaultValue as CFNumber as Any,
+                .maxValue: maxValue as CFNumber as Any
+        ]
     }
+}
+
+extension OTFAxisProtocol {
+    public var description: String {
+        return "id: \(identifier), name: \(name) \(minValue)...\(defaultValue)...\(maxValue) "
+    }
+}
+
+public class OTFAxis: OTFAxisProtocol, CustomStringConvertible {
+    
     public var name:String
     public var identifier:Int
     public var minValue:Double
@@ -25,7 +54,7 @@ public class OTFAxis {
     public var defaultValue:Double
     //public var currentValue:Double
     
-    public init(identifier:Int, name: String, min:Double, default:Double, max:Double) {
+    required public init(identifier:Int, name: String, min:Double, default:Double, max:Double) {
         self.identifier = identifier
         self.name = name
         self.minValue = min
@@ -36,20 +65,6 @@ public class OTFAxis {
     }
 }
 
-public extension OTFAxis {
-    var dict:[String: Any] {
-        return [Keys.id.rawValue:identifier as CFNumber as Any,
-                Keys.name.rawValue: name as  Any,
-                Keys.minValue.rawValue: minValue as CFNumber as Any,
-                Keys.defaultValue.rawValue: defaultValue as CFNumber as Any,
-                Keys.maxValue.rawValue: maxValue as CFNumber as Any
-        ]
-    }
-}
 
-extension OTFAxis:CustomStringConvertible {
-    public var description: String {
-        return "id: \(identifier), name: \(name) \(minValue)...\(defaultValue)...\(maxValue) "
-    }
-}
+
 

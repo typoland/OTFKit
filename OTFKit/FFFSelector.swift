@@ -10,12 +10,11 @@ import Foundation
 import OTF
 
 public class FFFSelector: FFFBase, OTFSelectorProtocol {
+
+    public var defaultSelector: Int
     
-    public var defaultSelector: Int?
-    public var parent: FFFType
-    
-    public init (parent:FFFType, name: String, nameID: Int?, identifier: Int, defaultSelector: Int?) {
-        self.parent = parent
+    required public init (name: String, nameID: Int, identifier: Int, defaultSelector: Int) {
+
         self.defaultSelector = defaultSelector
         super.init(name: name, nameID: nameID, identifier: identifier)
     }

@@ -12,10 +12,10 @@ import OTF
 public class FFFBase: NSObject, OTFBaseProtocol {
     
     public var name: String
-    public var nameID: Int?
+    public var nameID: Int
     public var identifier: Int
     
-    public init (name: String, nameID: Int?, identifier: Int) {
+    public init (name: String, nameID: Int, identifier: Int) {
         self.name = name
         self.nameID = nameID
         self.identifier = identifier

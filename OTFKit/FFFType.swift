@@ -12,23 +12,21 @@ import OTF
 @objc public class FFFType: FFFBase, OTFTypeProtocol {
     
     public typealias Selector = FFFSelector
-
     public var exclusive: Int
 
     var _selectors: OrderedSet<FFFSelector>
-    
     @objc public var selectors: Array<FFFSelector> {
         get { return Array(_selectors) }
         set { _selectors = OrderedSet( newValue ) }
     }
     
-    public init(name: String,
+    required public init(name: String,
                 nameID: Int,
                 identifier: Int,
                 exclusive: Int,
-                selectors: OrderedSet<Selector> = [])
+                selectors: [Selector] = [])
     {
-        self._selectors = selectors
+        self._selectors = OrderedSet(selectors)
         self.exclusive = exclusive
         super.init(name: name, nameID: nameID, identifier: identifier)
     }
