@@ -28,6 +28,12 @@ public protocol OTFAxisProtocol:AxisProtocol {
     init(identifier:Int, name: String, min:Double, default:Double, max:Double)
 }
 
+//extension OTFAxisProtocol {
+//    static func newAxis(identifier:Int, name: String, min:Double, default:Double, max:Double) -> Self {
+//        return Self.init(identifier: identifier, name: name, min: min, default: `default`, max: max)
+//    }
+//}
+
 extension OTFAxisProtocol {
     var dict:[OTFAxisProtocolKeys: Any] {
         return [.id: identifier as CFNumber as Any,
