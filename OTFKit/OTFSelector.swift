@@ -9,7 +9,7 @@
 import Foundation
 import OTF
 
-public class FFFSelector: FFFBase, OTFSelectorProtocol {
+public class OTFSelector: OTFBase, OTFSelectorProtocol {
 
     public var defaultSelector: Int
     
@@ -20,8 +20,8 @@ public class FFFSelector: FFFBase, OTFSelectorProtocol {
     }
 }
 
-extension FFFSelector {
-    public override var description: String {
-        return "OTFSelector \"\(name)\""
+extension OTFSelector {
+    public var description: String {
+        return "OldOTFSelector \"\(name)\""
     }
 }

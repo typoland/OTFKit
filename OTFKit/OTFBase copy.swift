@@ -9,7 +9,7 @@
 import Foundation
 import OTF
 
-public class FFFBase: NSObject, OTFBaseProtocol {
+public class OTFBase: OTFBaseProtocol {
     
     public var name: String
     public var nameID: Int

@@ -9,13 +9,13 @@
 import Foundation
 import OTF
 
-@objc public class FFFType: FFFBase, OTFTypeProtocol {
+public class OTFType<S: OTFSelectorProtocol>: OTFBase, OTFTypeProtocol {
     
-    public typealias Selector = FFFSelector
+    public typealias Selector = S
     public var exclusive: Int
 
-    var _selectors: OrderedSet<FFFSelector>
-    @objc public var selectors: Array<FFFSelector> {
+    var _selectors: OrderedSet<Selector>
+    public var selectors: Array<Selector> {
         get { return Array(_selectors) }
         set { _selectors = OrderedSet( newValue ) }
     }
@@ -32,8 +32,8 @@ import OTF
     }
 }
 
-extension FFFType {
-    public override var description: String {
-        return "OTFType \"\(name)\""
+extension OTFType {
+    public var description: String {
+        return "OldOTFType \"\(name)\""
     }
 }
