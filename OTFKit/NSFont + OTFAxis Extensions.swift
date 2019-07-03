@@ -45,7 +45,6 @@ extension NSFont {
                                 min: axisDescription[OTFAxisProtocolKeys.minValue.rawValue] as? Double ?? 0,
                                 default: variation[identifier] ?? axisDescription[OTFAxisProtocolKeys.defaultValue.rawValue] as? Double ?? 0,
                                 max: axisDescription[OTFAxisProtocolKeys.maxValue.rawValue] as? Double ?? 0)
-                //print(axis)
                 result.append(axis)
             }
         }
