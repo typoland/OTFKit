@@ -12,15 +12,16 @@
 		B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B24A7A5422AE5E4800EBA62C /* OTFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A6C22AE5E7A00EBA62C /* OTF.framework */; };
 		B28473D322CCE28B00A6E2F3 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */; };
-		B28473D422CCE28B00A6E2F3 /* OTFAxis copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CA22CCE28A00A6E2F3 /* OTFAxis copy.swift */; };
 		B28473D522CCE28B00A6E2F3 /* NSFont + OTFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */; };
 		B28473D622CCE28B00A6E2F3 /* OTFTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */; };
-		B28473D722CCE28B00A6E2F3 /* OTFSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CD22CCE28B00A6E2F3 /* OTFSelector.swift */; };
 		B28473D822CCE28B00A6E2F3 /* OTFBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CE22CCE28B00A6E2F3 /* OTFBaseProtocol.swift */; };
-		B28473D922CCE28B00A6E2F3 /* NSFont + OTFAxis Extensions copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CF22CCE28B00A6E2F3 /* NSFont + OTFAxis Extensions copy.swift */; };
 		B28473DA22CCE28B00A6E2F3 /* OTFSelectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473D022CCE28B00A6E2F3 /* OTFSelectorProtocol.swift */; };
-		B28473DB22CCE28B00A6E2F3 /* OTFBase copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473D122CCE28B00A6E2F3 /* OTFBase copy.swift */; };
-		B28473DC22CCE28B00A6E2F3 /* OTFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473D222CCE28B00A6E2F3 /* OTFType.swift */; };
+		B28473DE22CCE3FF00A6E2F3 /* NSFont + OTFAxis Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473DD22CCE3FF00A6E2F3 /* NSFont + OTFAxis Extensions.swift */; };
+		B28473E322CCE46B00A6E2F3 /* OTFBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E022CCE46B00A6E2F3 /* OTFBase.swift */; };
+		B28473E422CCE46B00A6E2F3 /* OTFAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E122CCE46B00A6E2F3 /* OTFAxis.swift */; };
+		B28473E522CCE46B00A6E2F3 /* OTFSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */; };
+		B28473E822CCE4BC00A6E2F3 /* OTFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E722CCE4BC00A6E2F3 /* OTFType.swift */; };
+		B28473EC22CCE54E00A6E2F3 /* OTFAxisProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473EB22CCE54E00A6E2F3 /* OTFAxisProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +44,16 @@
 		B24A7A6C22AE5E7A00EBA62C /* OTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26C200E22AEC40D003480EB /* OTFKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OTFKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
-		B28473CA22CCE28A00A6E2F3 /* OTFAxis copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OTFAxis copy.swift"; sourceTree = "<group>"; };
 		B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + OTFExtensions.swift"; sourceTree = "<group>"; };
 		B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFTypeProtocol.swift; sourceTree = "<group>"; };
-		B28473CD22CCE28B00A6E2F3 /* OTFSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTFSelector.swift; path = ../../OTF/OTF/OTFSelector.swift; sourceTree = "<group>"; };
 		B28473CE22CCE28B00A6E2F3 /* OTFBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFBaseProtocol.swift; sourceTree = "<group>"; };
-		B28473CF22CCE28B00A6E2F3 /* NSFont + OTFAxis Extensions copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + OTFAxis Extensions copy.swift"; sourceTree = "<group>"; };
 		B28473D022CCE28B00A6E2F3 /* OTFSelectorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFSelectorProtocol.swift; sourceTree = "<group>"; };
-		B28473D122CCE28B00A6E2F3 /* OTFBase copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OTFBase copy.swift"; sourceTree = "<group>"; };
-		B28473D222CCE28B00A6E2F3 /* OTFType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTFType.swift; path = ../../OTF/OTF/OTFType.swift; sourceTree = "<group>"; };
+		B28473DD22CCE3FF00A6E2F3 /* NSFont + OTFAxis Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + OTFAxis Extensions.swift"; sourceTree = "<group>"; };
+		B28473E022CCE46B00A6E2F3 /* OTFBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFBase.swift; sourceTree = "<group>"; };
+		B28473E122CCE46B00A6E2F3 /* OTFAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFAxis.swift; sourceTree = "<group>"; };
+		B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFSelector.swift; sourceTree = "<group>"; };
+		B28473E722CCE4BC00A6E2F3 /* OTFType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTFType.swift; path = ../../OTF/OTF/OTFType.swift; sourceTree = "<group>"; };
+		B28473EB22CCE54E00A6E2F3 /* OTFAxisProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFAxisProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,16 +99,10 @@
 		B24A7A5322AE5E4800EBA62C /* OTFKit */ = {
 			isa = PBXGroup;
 			children = (
-				B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */,
-				B28473CA22CCE28A00A6E2F3 /* OTFAxis copy.swift */,
-				B28473CE22CCE28B00A6E2F3 /* OTFBaseProtocol.swift */,
-				B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */,
-				B28473D022CCE28B00A6E2F3 /* OTFSelectorProtocol.swift */,
-				B28473D122CCE28B00A6E2F3 /* OTFBase copy.swift */,
-				B28473CD22CCE28B00A6E2F3 /* OTFSelector.swift */,
-				B28473CF22CCE28B00A6E2F3 /* NSFont + OTFAxis Extensions copy.swift */,
-				B28473D222CCE28B00A6E2F3 /* OTFType.swift */,
-				B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */,
+				B28473DF22CCE41800A6E2F3 /* Protocols */,
+				B28473E622CCE4A300A6E2F3 /* Objects */,
+				B28473EA22CCE4FF00A6E2F3 /* Utilities */,
+				B28473E922CCE4E100A6E2F3 /* NSFont Extensions */,
 				B24A7A5422AE5E4800EBA62C /* OTFKit.h */,
 				B24A7A5522AE5E4800EBA62C /* Info.plist */,
 			);
@@ -128,6 +124,45 @@
 				B24A7A6C22AE5E7A00EBA62C /* OTF.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B28473DF22CCE41800A6E2F3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B28473CE22CCE28B00A6E2F3 /* OTFBaseProtocol.swift */,
+				B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */,
+				B28473D022CCE28B00A6E2F3 /* OTFSelectorProtocol.swift */,
+				B28473EB22CCE54E00A6E2F3 /* OTFAxisProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B28473E622CCE4A300A6E2F3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B28473E722CCE4BC00A6E2F3 /* OTFType.swift */,
+				B28473E022CCE46B00A6E2F3 /* OTFBase.swift */,
+				B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */,
+				B28473E122CCE46B00A6E2F3 /* OTFAxis.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		B28473E922CCE4E100A6E2F3 /* NSFont Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B28473DD22CCE3FF00A6E2F3 /* NSFont + OTFAxis Extensions.swift */,
+				B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */,
+			);
+			name = "NSFont Extensions";
+			sourceTree = "<group>";
+		};
+		B28473EA22CCE4FF00A6E2F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +276,14 @@
 			files = (
 				B28473DA22CCE28B00A6E2F3 /* OTFSelectorProtocol.swift in Sources */,
 				B28473D822CCE28B00A6E2F3 /* OTFBaseProtocol.swift in Sources */,
+				B28473E522CCE46B00A6E2F3 /* OTFSelector.swift in Sources */,
+				B28473E322CCE46B00A6E2F3 /* OTFBase.swift in Sources */,
+				B28473EC22CCE54E00A6E2F3 /* OTFAxisProtocol.swift in Sources */,
 				B28473D522CCE28B00A6E2F3 /* NSFont + OTFExtensions.swift in Sources */,
-				B28473DC22CCE28B00A6E2F3 /* OTFType.swift in Sources */,
+				B28473E822CCE4BC00A6E2F3 /* OTFType.swift in Sources */,
 				B28473D622CCE28B00A6E2F3 /* OTFTypeProtocol.swift in Sources */,
-				B28473DB22CCE28B00A6E2F3 /* OTFBase copy.swift in Sources */,
-				B28473D922CCE28B00A6E2F3 /* NSFont + OTFAxis Extensions copy.swift in Sources */,
-				B28473D422CCE28B00A6E2F3 /* OTFAxis copy.swift in Sources */,
-				B28473D722CCE28B00A6E2F3 /* OTFSelector.swift in Sources */,
+				B28473DE22CCE3FF00A6E2F3 /* NSFont + OTFAxis Extensions.swift in Sources */,
+				B28473E422CCE46B00A6E2F3 /* OTFAxis.swift in Sources */,
 				B28473D322CCE28B00A6E2F3 /* OrderedSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
