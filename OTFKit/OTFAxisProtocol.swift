@@ -16,14 +16,32 @@ public protocol AxisProtocol {
 	var defaultValue:Double {get}
 }
 
-public enum OTFAxisProtocolKeys:String {
+public enum OTFAxisProtocolKeys: String {
 	case id = "NSCTVariationAxisIdentifier"
 	case name = "NSCTVariationAxisName"
 	case minValue = "NSCTVariationAxisMinimumValue"
 	case defaultValue = "NSCTVariationAxisDefaultValue"
 	case maxValue = "NSCTVariationAxisMaximumValue"
+	
 }
 
 public protocol OTFAxisProtocol:AxisProtocol {
 	init(identifier:Int, name: String, min:Double, default:Double, max:Double)
+}
+
+extension OTFAxisProtocol {
+	public var dict:[OTFAxisProtocolKeys: Any] {
+		return [.id: identifier as CFNumber as Any,
+				.name: name as  Any,
+				.minValue: minValue as CFNumber as Any,
+				.defaultValue: defaultValue as CFNumber as Any,
+				.maxValue: maxValue as CFNumber as Any
+		]
+	}
+}
+
+extension OTFAxisProtocol {
+	public var description: String {
+		return "id: \(identifier), name: \(name) \(minValue)...\(defaultValue)...\(maxValue) "
+	}
 }

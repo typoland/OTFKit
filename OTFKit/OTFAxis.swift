@@ -9,30 +9,11 @@
 import Foundation
 
 
-//extension OTFAxisProtocol {
-//    static func newAxis(identifier:Int, name: String, min:Double, default:Double, max:Double) -> Self {
-//        return Self.init(identifier: identifier, name: name, min: min, default: `default`, max: max)
-//    }
-//}
 
-extension OTFAxisProtocol {
-    var dict:[OTFAxisProtocolKeys: Any] {
-        return [.id: identifier as CFNumber as Any,
-                .name: name as  Any,
-                .minValue: minValue as CFNumber as Any,
-                .defaultValue: defaultValue as CFNumber as Any,
-                .maxValue: maxValue as CFNumber as Any
-        ]
-    }
-}
 
-extension OTFAxisProtocol {
-    public var description: String {
-        return "id: \(identifier), name: \(name) \(minValue)...\(defaultValue)...\(maxValue) "
-    }
-}
 
 public class OTFAxis: OTFAxisProtocol, CustomStringConvertible {
+	
     
     public var name:String
     public var identifier:Int

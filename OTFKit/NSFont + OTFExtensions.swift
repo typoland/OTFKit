@@ -82,7 +82,7 @@ extension NSFont {
         return result
     }
     
-    var allChars: String {
+    public var allCharacters: String {
         get {
             print("getting AllChars")
             let allFontChars = self.coveredCharacterSet.intersection(CharacterSet.controlCharacters.inverted)
