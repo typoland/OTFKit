@@ -138,9 +138,9 @@
 		B28473E622CCE4A300A6E2F3 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				B28473E722CCE4BC00A6E2F3 /* OTFType.swift */,
 				B28473E022CCE46B00A6E2F3 /* OTFBase.swift */,
 				B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */,
+				B28473E722CCE4BC00A6E2F3 /* OTFType.swift */,
 				B28473E122CCE46B00A6E2F3 /* OTFAxis.swift */,
 			);
 			name = Objects;
