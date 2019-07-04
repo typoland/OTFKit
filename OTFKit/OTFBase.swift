@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import OTF
 
 public class OTFBase: OTFBaseProtocol {
     

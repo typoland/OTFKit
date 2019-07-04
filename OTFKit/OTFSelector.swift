@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import OTF
 
 public class OTFSelector: OTFBase, OTFSelectorProtocol {
 

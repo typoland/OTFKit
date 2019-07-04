@@ -10,7 +10,6 @@
 		B24A7A5B22AE5E4800EBA62C /* OTFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A5122AE5E4800EBA62C /* OTFKit.framework */; };
 		B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */; };
 		B24A7A6222AE5E4800EBA62C /* OTFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B24A7A5422AE5E4800EBA62C /* OTFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24A7A6C22AE5E7A00EBA62C /* OTF.framework */; };
 		B28473D322CCE28B00A6E2F3 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */; };
 		B28473D522CCE28B00A6E2F3 /* NSFont + OTFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */; };
 		B28473D622CCE28B00A6E2F3 /* OTFTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */; };
@@ -61,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24A7A6D22AE5E7A00EBA62C /* OTF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
