@@ -30,7 +30,7 @@ public protocol OTFAxisProtocol:AxisProtocol {
 }
 
 extension OTFAxisProtocol {
-	public var dict:[OTFAxisProtocolKeys: Any] {
+	public var dict: [OTFAxisProtocolKeys: Any] {
 		return [.id: identifier as CFNumber as Any,
 				.name: name as  Any,
 				.minValue: minValue as CFNumber as Any,

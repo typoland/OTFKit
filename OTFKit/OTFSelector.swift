@@ -12,8 +12,12 @@ public class OTFSelector: OTFBase, OTFSelectorProtocol {
 
     public var defaultSelector: Int
     
-    required public init (name: String, nameID: Int, identifier: Int, defaultSelector: Int) {
-
+    required public init (
+		name: String,
+		nameID: Int,
+		identifier: Int,
+		defaultSelector: Int)
+	{
         self.defaultSelector = defaultSelector
         super.init(name: name, nameID: nameID, identifier: identifier)
     }

@@ -21,6 +21,7 @@
 		B28473E522CCE46B00A6E2F3 /* OTFSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */; };
 		B28473E822CCE4BC00A6E2F3 /* OTFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473E722CCE4BC00A6E2F3 /* OTFType.swift */; };
 		B28473EC22CCE54E00A6E2F3 /* OTFAxisProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28473EB22CCE54E00A6E2F3 /* OTFAxisProtocol.swift */; };
+		B2E8B9F622D0739500159FD5 /* OTFFontExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8B9F522D0739500159FD5 /* OTFFontExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B28473E222CCE46B00A6E2F3 /* OTFSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFSelector.swift; sourceTree = "<group>"; };
 		B28473E722CCE4BC00A6E2F3 /* OTFType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTFType.swift; path = ../../OTF/OTF/OTFType.swift; sourceTree = "<group>"; };
 		B28473EB22CCE54E00A6E2F3 /* OTFAxisProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFAxisProtocol.swift; sourceTree = "<group>"; };
+		B2E8B9F522D0739500159FD5 /* OTFFontExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFFontExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		B24A7A5E22AE5E4800EBA62C /* OTFKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2E8B9F522D0739500159FD5 /* OTFFontExtensionTests.swift */,
 				B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */,
 				B24A7A6122AE5E4800EBA62C /* Info.plist */,
 			);
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E8B9F622D0739500159FD5 /* OTFFontExtensionTests.swift in Sources */,
 				B24A7A6022AE5E4800EBA62C /* OTFKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,16 +8,19 @@
 
 import Foundation
 
-public class OTFBase: OTFBaseProtocol {
+open class OTFBase: OTFBaseProtocol {
     
     public var name: String
     public var nameID: Int
     public var identifier: Int
     
-    public init (name: String, nameID: Int, identifier: Int) {
+    public init (
+		name: String,
+		nameID: Int,
+		identifier: Int)
+	{
         self.name = name
         self.nameID = nameID
         self.identifier = identifier
     }
-    
 }

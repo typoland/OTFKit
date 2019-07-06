@@ -34,6 +34,6 @@ extension OTFTypeProtocol {
 
 extension OTFTypeProtocol {
 	public static func == <F2:OTFTypeProtocol>(lhs: Self, rhs: F2) -> Bool {
-		return lhs.name == rhs.name
+		return lhs.name == rhs.name && lhs.exclusive == rhs.exclusive
 	}
 }
