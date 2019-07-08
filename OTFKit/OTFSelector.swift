@@ -23,8 +23,8 @@ public class OTFSelector: OTFBase, OTFSelectorProtocol {
     }
 }
 
-extension OTFSelector {
+extension OTFSelector: CustomStringConvertible {
     public var description: String {
-        return "OldOTFSelector \"\(name)\""
+		return "OTFSelector: \"\(name)\""
     }
 }
