@@ -42,7 +42,6 @@
 		B24A7A5F22AE5E4800EBA62C /* OTFKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTFKitTests.swift; sourceTree = "<group>"; };
 		B24A7A6122AE5E4800EBA62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B24A7A6C22AE5E7A00EBA62C /* OTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B26C200E22AEC40D003480EB /* OTFKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OTFKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B28473C922CCE28A00A6E2F3 /* OrderedSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
 		B28473CB22CCE28A00A6E2F3 /* NSFont + OTFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont + OTFExtensions.swift"; sourceTree = "<group>"; };
 		B28473CC22CCE28B00A6E2F3 /* OTFTypeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTFTypeProtocol.swift; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		B24A7A4722AE5E4800EBA62C = {
 			isa = PBXGroup;
 			children = (
-				B26C200E22AEC40D003480EB /* OTFKit.playground */,
 				B24A7A5322AE5E4800EBA62C /* OTFKit */,
 				B24A7A5E22AE5E4800EBA62C /* OTFKitTests */,
 				B24A7A5222AE5E4800EBA62C /* Products */,

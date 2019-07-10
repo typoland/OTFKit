@@ -48,9 +48,7 @@ class OTFKitTests: XCTestCase {
 		super.tearDown()
 		b1 = nil; b2 = nil; b3 = nil
 		s1 = nil; s2 = nil; s3 = nil
-		t1 = nil; t2 = nil; t3 = nil
-		
-		
+		t1 = nil; t2 = nil; t3 = nil	
     }
 
 	func testOTFClassesEqual() {

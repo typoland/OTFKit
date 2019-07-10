@@ -25,6 +25,6 @@ public class OTFSelector: OTFBase, OTFSelectorProtocol {
 
 extension OTFSelector: CustomStringConvertible {
     public var description: String {
-		return "OTFSelector: \"\(name)\""
+		return "OTFSelector: \"\(name)\" nameID:\(nameID) identifier:\(identifier) defaultSelector:\(defaultSelector)"
     }
 }
