@@ -84,7 +84,7 @@ extension NSFont {
     
     public var allCharacters: String {
         get {
-            print("getting AllChars")
+            //print("getting AllChars")
             let allFontChars = self.coveredCharacterSet.intersection(CharacterSet.controlCharacters.inverted)
             var result = ""
             for plane : UInt8 in 0...16 {
